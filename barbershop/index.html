@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop 974 - Lyon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-reunion">97</span>
+                <span class="logo-text">Coiff-Barber</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#equipe" class="nav-link">L'Équipe</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">L'Esprit</span>
+                    <span class="title-line">de La Réunion</span>
+                    <span class="title-line highlight">à Lyon</span>
+                </h1>
+                <p class="hero-subtitle">Coupe • Style • Tradition</p>
+                <button class="cta-button" onclick="scrollToSection('contact')">
+                    Prendre Rendez-vous
+                </button>
+            </div>
+        </div>
+        <div class="tropical-elements">
+            <div class="palm-leaf leaf-1">🌴</div>
+            <div class="palm-leaf leaf-2">🌺</div>
+            <div class="palm-leaf leaf-3">🌴</div>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Notre Histoire</h2>
+                    <p>Bienvenue chez <strong>Barber 974</strong>, où l'art de la coupe rencontre la chaleur créole.
+                        Installés au cœur de Lyon, nous apportons l'esprit authentique de La Réunion dans chaque coupe,
+                        chaque rasage.</p>
+                    <p>Notre salon combine techniques modernes et tradition réunionnaise pour vous offrir une expérience
+                        unique. Venez découvrir l'hospitalité créole et repartez avec un style impeccable.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Clients Satisfaits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Barbiers Experts</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Passion Créole</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title center">Nos Services</h2>
+            <p class="section-subtitle">Des prestations de qualité pour tous les styles</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3>Coupe Classique</h3>
+                    <p>Coupe traditionnelle avec finitions soignées</p>
+                    <span class="price">25€</span>
+                </div>
+                <div class="service-card featured">
+                    <div class="ribbon">Populaire</div>
+                    <div class="service-icon">💈</div>
+                    <h3>Coupe + Barbe</h3>
+                    <p>Le combo parfait : coupe + taille de barbe + rasage contours</p>
+                    <span class="price">40€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🪒</div>
+                    <h3>Rasage Traditionnel</h3>
+                    <p>Rasage à l'ancienne avec serviette chaude</p>
+                    <span class="price">20€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👨</div>
+                    <h3>Design Capillaire</h3>
+                    <p>Dessins et dégradés personnalisés</p>
+                    <span class="price">35€</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Coupe Enfant</h3>
+                    <p>Spécial kids -12 ans</p>
+                    <span class="price">18€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe -->
+    <section id="equipe" class="team">
+        <div class="container">
+            <h2 class="section-title center">L'Équipe 974</h2>
+            <p class="section-subtitle">Des barbiers passionnés venus de l'île intense</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">👨‍🦱</div>
+                    <h3>Malik</h3>
+                    <p class="role">Fondateur & Master Barber</p>
+                    <p class="bio">15 ans d'expérience, formé à Saint-Denis</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">👨‍🦲</div>
+                    <h3>Jérôme</h3>
+                    <p class="role">Spécialiste Dégradés</p>
+                    <p class="bio">Le king des designs capillaires</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">👨</div>
+                    <h3>David</h3>
+                    <p class="role">Barbier Traditionnel</p>
+                    <p class="bio">Expert du rasage à l'ancienne</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Galerie -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2 class="section-title center">Nos Réalisations</h2>
+
+            <div class="gallery-grid-2">
+
+                <!-- Dégradé -->
+                <div class="gallery-card">
+                    <div class="swiper degrade-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/744f2366dc7bda06dbfa2653ea03ed27.jpg" alt="coupe1"></div>
+                            <div class="swiper-slide"><img src="images/degrade-bas-19-idees-qui-rendent-un-homme-irresistible-www.astucesdefilles.com-1.jpg" alt="coupe2"></div>
+                            <div class="swiper-slide"><img src="images/degrade-haut-700x650.jpeg" alt="coupe3"></div>
+                            <div class="swiper-slide"><img src="images/ksl.jpg" alt="coupe4"></div>
+                        </div>
+                        <!-- Flèches -->
+                        <div class="swiper-button-prev degrade-prev"></div>
+                        <div class="swiper-button-next degrade-next"></div>
+                    </div>
+
+                    <div class="gallery-info">
+                        <h3>Dégradé Premium</h3>
+                        <p>Dégradé, bas, moyen ou haut – finition propre et soignée.</p>
+                    </div>
+                </div>
+
+                <!-- Barbe -->
+                <div class="gallery-card">
+                    <div class="swiper barbe-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/c78ffb2d876dc71922601fe0b1577fc8.jpg" alt="coupe1"></div>
+                            <div class="swiper-slide"><img src="images/7a94d8641b55f2458d5b9961c6cbe7b3.jpg" alt="Barbe longue"></div>
+                            <div class="swiper-slide"><img src="images/OIP.webp" alt="Barbe sculptée"></div>
+                        </div>
+                        <!-- Flèches -->
+                        <div class="swiper-button-prev barbe-prev"></div>
+                        <div class="swiper-button-next barbe-next"></div>
+                    </div>
+
+                    <div class="gallery-info">
+                        <h3>Barbe Sculptée</h3>
+                        <p>Contours nets, ajustement précis et style sur-mesure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title center">Prendre Rendez-vous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p> 6 Av. Berthelot, 69007 Lyon</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>07 43 55 96 84</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>mercredi-samedi : 9h-19h<br>Dimanche : Fermé</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61581731606280" class="social-btn facebook">📘
+                            Facebook</a>
+                        <a href="https://www.instagram.com/97coiffbarber/" class="social-btn instagram">📷 Instagram</a>
+                        <a href="https://www.tiktok.com/@97coiffbarber" class="social-btn tiktok">🎵 TikTok</a>
+                        <a href="#" class="social-btn snapchat">👻 Snapchat</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="appointmentForm">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="tel" placeholder="Téléphone" required>
+                        <input type="email" placeholder="Email" required>
+                        <select required>
+                            <option value="">Choisir un service</option>
+                            <option>Coupe Classique</option>
+                            <option>Coupe + Barbe</option>
+                            <option>Rasage Traditionnel</option>
+                            <option>Design Capillaire</option>
+                            <option>Coupe Enfant</option>
+                            <option>Soin VIP</option>
+                        </select>
+                        <textarea placeholder="Message (optionnel)" rows="4"></textarea>
+                        <button type="submit" class="submit-btn">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">BARBER</span>
+                    <span class="logo-reunion">974</span>
+                </div>
+                <p class="footer-text">L'esprit de La Réunion à Lyon</p>
+                <p class="copyright">© 2024 Barber 974. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                // Update active state
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+
+                // Smooth scroll
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Form submission
+        document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Merci ! Nous vous contacterons rapidement pour confirmer votre rendez-vous.');
+            this.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .team-member, .gallery-item, .stat-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax effect for hero
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero-content');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Floating palm leaves animation
+        function animateLeaves() {
+            const leaves = document.querySelectorAll('.palm-leaf');
+            leaves.forEach((leaf, index) => {
+                const randomX = Math.random() * 20 - 10;
+                const randomY = Math.random() * 20 - 10;
+                setTimeout(() => {
+                    leaf.style.transform = `translate(${randomX}px, ${randomY}px) rotate(${randomX}deg)`;
+                }, index * 500);
+            });
+        }
+
+        setInterval(animateLeaves, 3000);
+        animateLeaves();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const degradeSwiper = new Swiper('.degrade-swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.degrade-next',
+                prevEl: '.degrade-prev'
+            }
+        });
+
+        const barbeSwiper = new Swiper('.barbe-swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.barbe-next',
+                prevEl: '.barbe-prev'
+            }
+        });
+    </script>
+
+</body>
+
+</html>
